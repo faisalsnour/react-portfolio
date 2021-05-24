@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Test from './components/Test'
 import Wrapper from "./components/Wrapper"
 import Footer from "./components/Footer"
+import About from "./components/About"
 // import Navbar from './components/Navbar'
 
 
@@ -28,6 +29,7 @@ function App() {
     <div>
       <Wrapper>
         {/* <Navbar /> */}
+        <About />
         <p>you clicked {count} times</p>
         <input type="text" onChange={handleName}></input>
         <button onClick={() => setCount(count + 1)}>Increase</button>
