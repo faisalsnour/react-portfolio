@@ -10,7 +10,12 @@ import WorkDayScheduler from "../../components/RecentProjects/WorkDayScheduler.p
 export default function RecentProject() {
     return (
         <>
+            <div className="container">
+                <div id="projects" className="row">
+                    <Project image={GoldieMohrLtd} name="Goldie Mohr Ltd" deployed="https://goldie-mohr-full.herokuapp.com/" repository="https://github.com/GoldieMohrProject/goldie-mohr" description="The purpose of this project is to create a new and highly improved website for the company Goldie Mohr Ltd. The website contains home, services & projects, products, about us, careers and contact us pages. It also provide a login features and access to additional pages for registered employees" />
 
+                </div>
+            </div>
         </>
     )
 }
