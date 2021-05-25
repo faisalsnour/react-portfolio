@@ -1,0 +1,35 @@
+#hero {
+  background-image: url("./heroImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  /* height: 100vh; */
+  width: auto;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#knowMore {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  height: auto;
+}
+
+#knowMore h2 {
+  color: #3078c6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#knowMore p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+#btnKnowMore {
+  color: white;
+  font-size: large;
+  background-color: #3078c6;
+}
