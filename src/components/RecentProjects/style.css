@@ -6,3 +6,10 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
 }
+
+#recentProject {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3rem;
+  color: #3178c6;
+}
