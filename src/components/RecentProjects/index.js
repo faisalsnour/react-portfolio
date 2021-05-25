@@ -18,7 +18,7 @@ export default function RecentProject() {
 
 " />
                     <Project image={PasswordGenerator} name="Password Generator" deployed="https://faisalsnour.github.io/PasswordGenerator/" repository="https://github.com/faisalsnour/PasswordGenerator" description="The application generates complex passwords for users between 8 to 128 characters based on four criterias; Uppercase letters, Lowercase letters, Numbers, and Special characters. It verifies and validates user's entry before generating a password, whether the length of password meet the minimum or maximum limit, it also validates that at least one of the four criterias has been selected before processing" />
-                    <Project image={WorkDayScheduler} name="Demo project" deployed="https://goldie-mohr-full.herokuapp.com/" repository="https://github.com/GoldieMohrProject/goldie-mohr" description="abc abc abc abc abc abc abc abc abc abc abc abc" />
+                    <Project image={WorkDayScheduler} name="Work Day Scheduler" deployed="https://faisalsnour.github.io/WorkDayScheduler/" repository="https://github.com/faisalsnour/WorkDayScheduler" description="abc abc abc abc abc abc abc abc abc abc abc abc" />
 
                 </div>
             </div>
