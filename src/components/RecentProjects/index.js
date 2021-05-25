@@ -17,6 +17,8 @@ export default function RecentProject() {
                     <Project image={LMS} name="Library Management System" deployed="https://library-management-system-lms.herokuapp.com/" repository="https://github.com/faisalsnour/library-management-system" description="To build a management system that helps in handling the primary functions of libraries like maintaining the database for entering new books, tracking books that have been borrowed by members and storing members data in secure database
 
 " />
+                    <Project image={PasswordGenerator} name="Password Generator" deployed="https://faisalsnour.github.io/PasswordGenerator/" repository="https://github.com/faisalsnour/PasswordGenerator" description="The application generates complex passwords for users between 8 to 128 characters based on four criterias; Uppercase letters, Lowercase letters, Numbers, and Special characters. It verifies and validates user's entry before generating a password, whether the length of password meet the minimum or maximum limit, it also validates that at least one of the four criterias has been selected before processing" />
+                    <Project image={WorkDayScheduler} name="Demo project" deployed="https://goldie-mohr-full.herokuapp.com/" repository="https://github.com/GoldieMohrProject/goldie-mohr" description="abc abc abc abc abc abc abc abc abc abc abc abc" />
 
                 </div>
             </div>
