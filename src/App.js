@@ -5,6 +5,8 @@ import Test from './components/Test'
 import Wrapper from "./components/Wrapper"
 import Footer from "./components/Footer"
 import About from "./components/About"
+import RecentProjects from "./components/RecentProjects"
+
 // import Navbar from './components/Navbar'
 
 
@@ -30,6 +32,7 @@ function App() {
       <Wrapper>
         {/* <Navbar /> */}
         <About />
+        <RecentProjects />
         <p>you clicked {count} times</p>
         <input type="text" onChange={handleName}></input>
         <button onClick={() => setCount(count + 1)}>Increase</button>

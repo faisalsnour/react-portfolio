@@ -1,0 +1,24 @@
+#name {
+  padding-top: 20px;
+}
+
+#description {
+  padding-top: 15px;
+}
+
+#repositoryIcon {
+  color: #3178c6;
+}
+
+#deployedIcon {
+  color: #3178c6;
+  padding-right: 10px;
+}
+
+#repositoryIcon:hover {
+  color: #617d9b;
+}
+
+#deployedIcon:hover {
+  color: #617d9b;
+}
