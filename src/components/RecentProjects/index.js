@@ -15,6 +15,7 @@ export default function RecentProject() {
         <>
             <div className="container">
                 <p id="recentProject" >RECENT PROJECTS</p>
+                <div id="line" ></div>
                 <div id="projects" className="row">
                     <Project image={GoldieMohrLtd} name="Goldie Mohr Ltd" deployed="https://goldie-mohr-full.herokuapp.com/" repository="https://github.com/GoldieMohrProject/goldie-mohr" description="The purpose of this project is to create a new and highly improved website for the company Goldie Mohr Ltd. The website contains home, services & projects, products, about us, careers and contact us pages. It also provide a login features and access to additional pages for registered employees" />
                     <Project image={TheShoppies} name="The Shoppies" deployed="https://theshoppies-faisal.herokuapp.com/" repository="https://github.com/faisalsnour/movieSearch" description="This single-page web application allows user to search for movies and nominate them accordingly. Users are able to have their nominated movies saved in their web broswers so they can see them saved when they visit the website again. They are only allowed to nominate up to five movies. A banner will be displayed when five movies are nominated. The application uses OMDB's API to obtain information about movies.
