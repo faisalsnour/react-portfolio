@@ -20,13 +20,6 @@ export default function Contact() {
     function sendEmail(event) {
         event.preventDefault();
 
-        // const templateParams = {
-        //     user_name: event.target.user_name,
-        //     user_email: event.target.user_email,
-        //     message: event.target.message,
-        //     contact_number: parseInt(Math.random() * 10000)
-
-        // };
 
         emailjs
             .sendForm("service_7wfzojs", "contact_form", event.target, "user_nOyVexTohkJUOhOVmUL5g"
@@ -39,9 +32,6 @@ export default function Contact() {
 
     }
 
-    // function sendEmail() {
-    //     console.log(`name = ${senderName}, email =${senderEmail}, message =${senderMessage}`)
-    // }
 
     return (
         <>
