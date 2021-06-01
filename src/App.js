@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 import Home from "./components/Home"
 import About from "./components/About"
 import RecentProjects from "./components/RecentProjects"
+import Contact from "./components/Contact"
 
 // import Navbar from './components/Navbar'
 
@@ -43,6 +44,7 @@ function App() {
           <button onClick={() => setCount(count + 1)}>Increase</button>
           <button onClick={() => setCount(count > 0 ? count - 1 : count)}>Decrease</button>
           <Test name={name} />
+          <Contact />
         </Wrapper>
         <Footer />
       </Router>
