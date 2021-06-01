@@ -10,8 +10,8 @@ export default function Project({ name, description, deployed, repository, image
                     <h5 id="name" className="card-title">{name}</h5>
                     <p id="description" className="card-text">{description}</p>
                     <div style={{ textAlign: "right", marginTop: "5px" }}>
-                        <a href={deployed} target="_blank" title="Deployed application" rel="noreferrer"><i id="deployedIcon" class="fa fa-rocket fa-2x"></i></a>
-                        <a href={repository} target="_blank" title="Application's repository" rel="noreferrer"><i id="repositoryIcon" class="fab fa-github fa-2x"></i></a>
+                        <a href={deployed} target="_blank" title="Deployed application" rel="noreferrer"><i id="deployedIcon" className="fa fa-rocket fa-2x"></i></a>
+                        <a href={repository} target="_blank" title="Application's repository" rel="noreferrer"><i id="repositoryIcon" className="fab fa-github fa-2x"></i></a>
                         {/* <a id="repoLogo" href="https://www.faisal" target="_blank" rel="noreferrer" title="Apply on Indeed"><img class="img-fluid" width="80px" src={""} alt="Indeed Job Opportunity" /></a> */}
                     </div>
                 </div>

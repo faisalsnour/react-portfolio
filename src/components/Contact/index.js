@@ -1,12 +1,21 @@
 import "./style.css"
 import React, { useState, useRef } from "react"
 import emailjs from 'emailjs-com';
+import Modal from "../Modal"
 
 
 export default function Contact() {
 
     const [senderName, setName] = useState("")
+    const [show, setShow] = useState(false)
 
+    function showModal() {
+        setShow(true)
+    }
+
+    function hideModal() {
+        setShow(false)
+    }
 
     function handleChange(event) {
         event.preventDefault()
@@ -15,7 +24,6 @@ export default function Contact() {
 
 
     }
-
 
     function sendEmail(event) {
         event.preventDefault();
@@ -30,12 +38,21 @@ export default function Contact() {
                 console.log('FAILED...', error);
             });
 
+        // event.target.user_name = ""
+        // event.target.user_email = ""
+        // event.target.message = ""
+
+        showModal()
     }
 
 
     return (
         <>
             <div className="container">
+                <Modal show={show} handleClose={hideModal}>
+                    <b>🎉 Hi {senderName}! 🎉</b>
+                    <p>You have sent your message </p>
+                </Modal>
                 <p id="contactMe" >SEND A MESSAGE</p>
                 <div id="line" ></div>
                 <form onSubmit={sendEmail}>

@@ -9,7 +9,7 @@ export default function About() {
             <p id="recentProject" >ABOUT</p>
             <div id="lineAbout" ></div>
             <div id="content" className="card-body"  >
-                <p style={{ display: "inline;" }} >Faisal is a Front-end Developer and Certified Professional in
+                <p style={{ display: "inline" }} >Faisal is a Front-end Developer and Certified Professional in
                 Accessibility Core Competencies CPACC with experience in designing, developing,
                 and testing websites and web-applications.
                 He has BSc in Information Technology & Computing with practical knowledge in web accessibility to
