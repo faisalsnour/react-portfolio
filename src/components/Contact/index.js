@@ -7,6 +7,8 @@ import Modal from "../Modal"
 export default function Contact() {
 
     const [senderName, setName] = useState("")
+    const [senderEmail, setEmail] = useState("")
+    const [senderMessage, setMessage] = useState("")
     const [show, setShow] = useState(false)
 
     function showModal() {
@@ -18,16 +20,25 @@ export default function Contact() {
     }
 
     function handleChange(event) {
+
         event.preventDefault()
+        const id = event.target.id
+        const value = event.target.value
 
-        setName(event.target.value)
-
+        if (id === "senderName") {
+            setName(value)
+        }
+        else if (id === "senderEmail") {
+            setEmail(value)
+        }
+        else if (id === "senderMessage") {
+            setMessage(value)
+        }
 
     }
 
     function sendEmail(event) {
         event.preventDefault();
-
 
         emailjs
             .sendForm("service_7wfzojs", "contact_form", event.target, "user_nOyVexTohkJUOhOVmUL5g"
@@ -43,6 +54,13 @@ export default function Contact() {
         // event.target.message = ""
 
         showModal()
+
+        setName("")
+
+        setEmail("")
+
+        setMessage("")
+
     }
 
 
@@ -50,8 +68,7 @@ export default function Contact() {
         <>
             <div className="container">
                 <Modal show={show} handleClose={hideModal}>
-                    <b>🎉 Hi {senderName}! 🎉</b>
-                    <p>You have sent your message </p>
+                    <p>Your message has been sent successfully </p>
                 </Modal>
                 <p id="contactMe" >SEND A MESSAGE</p>
                 <div id="line" ></div>
@@ -60,18 +77,18 @@ export default function Contact() {
                     <div className="row">
                         <div className="mb-3">
                             <label for="senderName" className="form-label">Full Name</label>
-                            <input type="text" name="user_name" className="form-control" id="senderName" onChange={handleChange} placeholder="Enter your full name" required />
+                            <input type="text" name="user_name" value={senderName} className="form-control" id="senderName" onChange={handleChange} placeholder="Enter your full name" required />
                         </div>
                         <div className="mb-3">
                             <label for="senderEmail" className="form-label">Email address</label>
-                            <input type="email" name="user_email" className="form-control" id="senderEmail" placeholder="Enter your email address" required />
+                            <input type="email" name="user_email" value={senderEmail} className="form-control" id="senderEmail" onChange={handleChange} placeholder="Enter your email address" required />
                         </div>
                         <div className="mb-3">
                             <label for="senderMessage" className="form-label">Message</label>
-                            <textarea className="form-control" name="message" id="senderMessage" rows="6" placeholder="Enter your message here" required ></textarea>
+                            <textarea className="form-control" name="message" value={senderMessage} id="senderMessage" rows="6" onChange={handleChange} placeholder="Enter your message here" required ></textarea>
                         </div>
                         <div className="mb-3" style={{ textAlign: "center" }}>
-                            <button type="submit" value="Send" name="submit" className="btn" id="btnSend" onclick={sendEmail}>Primary</button>
+                            <button type="submit" value="Send" name="submit" className="btn" id="btnSend" onclick={sendEmail}>Send</button>
                         </div>
                     </div>
                 </form>
