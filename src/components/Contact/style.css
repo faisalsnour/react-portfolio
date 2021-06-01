@@ -10,3 +10,8 @@
   margin-right: 40%;
   border: 1px solid #3178c6;
 }
+
+#btnSend {
+  background-color: #3178c6;
+  color: white;
+}

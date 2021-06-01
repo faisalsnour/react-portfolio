@@ -19,6 +19,9 @@ export default function Contact() {
                         <label for="messageControlInput" className="form-label">Example textarea</label>
                         <textarea className="form-control" id="messageControlInput" rows="6" placeholder="Enter your message here"></textarea>
                     </div>
+                    <div className="mb-3" style={{ textAlign: "center" }}>
+                        <button type="button" class="btn" id="btnSend">Primary</button>
+                    </div>
                 </div>
 
             </div>
