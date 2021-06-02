@@ -17,6 +17,10 @@
   margin-left: 8px;
 }
 
+#resumeDownload:hover {
+  color: #617d9b;
+}
+
 #lineAbout {
   margin-left: 47%;
   margin-right: 47%;

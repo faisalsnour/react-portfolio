@@ -33,4 +33,10 @@
   color: white;
   font-size: large;
   background-color: #3078c6;
+  border: 0px;
+}
+
+#btnKnowMore:hover {
+  background-color: #617d9b;
+  border: 0px;
 }

@@ -15,3 +15,7 @@
   background-color: #3178c6;
   color: white;
 }
+
+#btnSend:hover {
+  background-color: #617d9b;
+}
