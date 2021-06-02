@@ -7,7 +7,7 @@ import { useEffect } from "react/cjs/react.development";
 
 
 
-export default function Home() {
+export default function Home({ moveTo }) {
 
     const [word, setWord] = useState("Know more")
 
@@ -21,7 +21,8 @@ export default function Home() {
                         <p>
                             A Front-end Developer and Certified Professional in Accessibility Core Competencies
                         </p>
-                        <Link to="/about" id="btnKnowMore" type="button" className="btn btn-primary" onMouseLeave={() => { setWord("Know more") }} onMouseEnter={() => { setWord("Know more >") }}>{word}</Link>
+
+                        <button to="/about" onClick={moveTo} id="btnKnowMore" type="button" className="btn btn-primary" onMouseLeave={() => { setWord("Know more") }} onMouseEnter={() => { setWord("Know more >") }}>{word}</button>
                     </div>
                 </div>
             </div>

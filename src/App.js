@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Test from './components/Test'
 import Wrapper from "./components/Wrapper"
@@ -16,6 +16,10 @@ import Contact from "./components/Contact"
 
 
 function App() {
+  const aboutRef = useRef()
+  // const projectsRef = useRef()
+
+
   // const [count, setCount] = useState(0);
   // const [name, setName] = useState()
 
@@ -30,14 +34,22 @@ function App() {
   //   await setName(vvv)
   // }
 
+  function moveToAbout() {
+    aboutRef.current.scrollIntoView()
+  }
+
+  // function moveToProjects() {
+  //   projectsRef.current.scrollIntoView()
+  // }
+
   return (
     <div>
       <Router>
         <Wrapper>
           <Route exact path="/about" component={About} />
           {/* <Navbar /> */}
-          <Home />
-          <About />
+          <Home moveTo={moveToAbout} />
+          <About refName={aboutRef} />
           <RecentProjects />
           {/* <p>you clicked {count} times</p>
           <input type="text" onChange={handleName}></input>

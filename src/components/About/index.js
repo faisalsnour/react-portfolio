@@ -1,11 +1,13 @@
 import Resume from '../About/Resume.pdf'
 import "./style.css"
 
-export default function About() {
+export default function About({ refName }) {
+
+
     return (
         // <div style={{ backgroundColor: "#DCDCDF" }}>
 
-        <div className="container">
+        <div className="container" ref={refName}>
             <p id="recentProject" >ABOUT</p>
             <div id="lineAbout" ></div>
             <div id="content" className="card-body"  >

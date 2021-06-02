@@ -13,7 +13,7 @@ import TheShoppies from "../../components/RecentProjects/TheShoppies.png"
 export default function RecentProject() {
     return (
         <>
-            <div className="container">
+            <div className="container" >
                 <p id="recentProject" >RECENT PROJECTS</p>
                 <div id="line" ></div>
                 <div id="projects" className="row">
