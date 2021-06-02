@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import Modal from "../Modal"
 
 
-export default function Contact() {
+export default function Contact({ refName }) {
 
     const [senderName, setName] = useState("")
     const [senderEmail, setEmail] = useState("")
@@ -66,7 +66,7 @@ export default function Contact() {
 
     return (
         <>
-            <div className="container">
+            <div className="container" ref={refName}>
                 <Modal show={show} handleClose={hideModal}>
                     <p>Your message has been sent successfully </p>
                 </Modal>

@@ -1,7 +1,8 @@
 
 import { Link, uselocation } from "react-router-dom"
+import "./style.css"
 
-export default function Navbar({ moveToAbout }) {
+export default function Navbar({ moveToAbout, moveToProjects, moveToContact }) {
     // const location = uselocation();
 
     return (
@@ -15,11 +16,17 @@ export default function Navbar({ moveToAbout }) {
                     <div className="collapse navbar-collapse" id="navbarNav" dir="rtl">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a id="btnContact" class="nav-link active coloredbutton" aria-current="page" href="#about" onClick={moveToAbout}>About</a>
+                                <a id="btnAbout" class="nav-link active coloredbutton" aria-current="page" href="#about" onClick={moveToAbout}>About</a>
 
                                 {/* <Link to="/recentprojects" className={location.pathname === "/recentprojects" ? "nav-link active" : "nav-link"}>
                                     <span className="navbarStyle">Recent Projects</span>
                                 </Link> */}
+                            </li>
+                            <li className="nav-item">
+                                <a id="btnProject" class="nav-link active coloredbutton" aria-current="page" href="#projects" onClick={moveToProjects}>Projects</a>
+                            </li>
+                            <li className="nav-item">
+                                <a id="btnContact" class="nav-link active coloredbutton" aria-current="page" href="#contact" onClick={moveToContact}>Contact</a>
                             </li>
                             {/* <li className="nav-item">
                                 <a to="/about" style={{ color: "#3078c6", fontWeight: "bold" }} className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>

@@ -1,0 +1,26 @@
+#btnAbout {
+  font-weight: bold;
+}
+
+#btnAbout:hover {
+  font-weight: bold;
+  color: #3178c6;
+}
+
+#btnProject {
+  font-weight: bold;
+}
+
+#btnProject:hover {
+  font-weight: bold;
+  color: #3178c6;
+}
+
+#btnContact {
+  font-weight: bold;
+}
+
+#btnContact:hover {
+  font-weight: bold;
+  color: #3178c6;
+}

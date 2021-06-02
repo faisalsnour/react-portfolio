@@ -10,10 +10,10 @@ import BurgerLogger from "../../components/RecentProjects/BurgerLogger.png"
 import TheShoppies from "../../components/RecentProjects/TheShoppies.png"
 
 
-export default function RecentProject() {
+export default function RecentProject({ refName }) {
     return (
         <>
-            <div className="container" >
+            <div className="container" ref={refName} >
                 <p id="recentProject" >RECENT PROJECTS</p>
                 <div id="line" ></div>
                 <div id="projects" className="row">

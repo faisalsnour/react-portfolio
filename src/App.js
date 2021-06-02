@@ -17,6 +17,9 @@ import Navbar from './components/Navbar'
 
 function App() {
   const aboutRef = useRef()
+  const projectsRef = useRef()
+  const contactRef = useRef()
+
   // const projectsRef = useRef()
 
 
@@ -38,25 +41,29 @@ function App() {
     aboutRef.current.scrollIntoView()
   }
 
-  // function moveToProjects() {
-  //   projectsRef.current.scrollIntoView()
-  // }
+  function moveToProjects() {
+    projectsRef.current.scrollIntoView()
+  }
+
+  function moveToContact() {
+    contactRef.current.scrollIntoView()
+  }
 
   return (
     <div>
       <Router>
         <Wrapper>
           <Route exact path="/about" component={About} />
-          <Navbar moveToAbout={moveToAbout} />
+          <Navbar moveToAbout={moveToAbout} moveToProjects={moveToProjects} moveToContact={moveToContact} />
           <Home moveTo={moveToAbout} />
           <About refName={aboutRef} />
-          <RecentProjects />
+          <RecentProjects refName={projectsRef} />
           {/* <p>you clicked {count} times</p>
           <input type="text" onChange={handleName}></input>
           <button onClick={() => setCount(count + 1)}>Increase</button>
           <button onClick={() => setCount(count > 0 ? count - 1 : count)}>Decrease</button>
           <Test name={name} /> */}
-          <Contact />
+          <Contact refName={contactRef} />
         </Wrapper>
         <Footer />
       </Router>
