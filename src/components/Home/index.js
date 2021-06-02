@@ -11,7 +11,6 @@ export default function Home({ moveTo }) {
 
     const [word, setWord] = useState("Know more")
 
-
     return (
         <>
             <div id="hero">

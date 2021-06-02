@@ -10,7 +10,7 @@ import About from "./components/About"
 import RecentProjects from "./components/RecentProjects"
 import Contact from "./components/Contact"
 
-// import Navbar from './components/Navbar'
+import Navbar from './components/Navbar'
 
 
 
@@ -47,7 +47,7 @@ function App() {
       <Router>
         <Wrapper>
           <Route exact path="/about" component={About} />
-          {/* <Navbar /> */}
+          <Navbar moveToAbout={moveToAbout} />
           <Home moveTo={moveToAbout} />
           <About refName={aboutRef} />
           <RecentProjects />
