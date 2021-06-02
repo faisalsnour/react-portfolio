@@ -8,6 +8,7 @@
   height: 500px;
   /* height: 100vh; */
   width: 100%;
+
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -34,6 +35,7 @@
   font-size: large;
   background-color: #3078c6;
   border: 0px;
+  border-radius: 0px;
 }
 
 #btnKnowMore:hover {

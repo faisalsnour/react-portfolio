@@ -14,6 +14,7 @@
 #btnSend {
   background-color: #3178c6;
   color: white;
+  border-radius: 0px;
 }
 
 #btnSend:hover {

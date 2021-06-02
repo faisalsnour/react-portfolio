@@ -77,15 +77,15 @@ export default function Contact() {
                     <div className="row">
                         <div className="mb-3">
                             <label for="senderName" className="form-label">Full Name</label>
-                            <input type="text" name="user_name" value={senderName} className="form-control" id="senderName" onChange={handleChange} placeholder="Enter your full name" required />
+                            <input type="text" name="user_name" value={senderName} style={{ borderRadius: "0px" }} className="form-control" id="senderName" onChange={handleChange} placeholder="Enter your full name" required />
                         </div>
                         <div className="mb-3">
                             <label for="senderEmail" className="form-label">Email address</label>
-                            <input type="email" name="user_email" value={senderEmail} className="form-control" id="senderEmail" onChange={handleChange} placeholder="Enter your email address" required />
+                            <input type="email" name="user_email" value={senderEmail} style={{ borderRadius: "0px" }} className="form-control br-0" id="senderEmail" onChange={handleChange} placeholder="Enter your email address" required />
                         </div>
                         <div className="mb-3">
                             <label for="senderMessage" className="form-label">Message</label>
-                            <textarea className="form-control" name="message" value={senderMessage} id="senderMessage" rows="6" onChange={handleChange} placeholder="Enter your message here" required ></textarea>
+                            <textarea className="form-control" name="message" value={senderMessage} style={{ borderRadius: "0px" }} id="senderMessage" rows="6" onChange={handleChange} placeholder="Enter your message here" required ></textarea>
                         </div>
                         <div className="mb-3" style={{ textAlign: "center" }}>
                             <button type="submit" value="Send" name="submit" className="btn" id="btnSend" onclick={sendEmail}>Send</button>
