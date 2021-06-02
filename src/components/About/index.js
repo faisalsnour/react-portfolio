@@ -18,7 +18,7 @@ export default function About() {
                 Coding Bootcamp at the University of Toronto
                 </p>
                 <p>
-                    <ul style={{ listStyle: "none" }}>
+                    <ul style={{ listStyle: "none", marginTop: "20px" }}>
                         <i className="fas fa-square-full square"></i><li style={{ display: "inline" }}>York University IEP Bridging Program in System Analysis</li>
                         <br />
                         <i className="fas fa-square-full square"></i><li style={{ display: "inline" }}>Immigration Practitioner Diploma</li>
