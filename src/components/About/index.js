@@ -7,7 +7,7 @@ export default function About({ refName }) {
     return (
         // <div style={{ backgroundColor: "#DCDCDF" }}>
 
-        <div className="container" ref={refName}>
+        <div className="container" ref={refName} >
             <p id="recentProject" >ABOUT</p>
             <div id="lineAbout" ></div>
             <div id="content" className="card-body"  >
@@ -33,7 +33,6 @@ export default function About({ refName }) {
                 <p>Faisal has solid knowledge about HTML5, CSS, SASS, GIT, SQL, JavaSript, BootStrap, React JS,
                     Express.JS, RESTful API, Adobe Experience Manager, Agile Development, Jira, Adobe Photoshop, InVision and Sketch</p>
                 <p>Download Resume <a id="pdfResume" href={Resume} download="FaisalNour-Resume"><i className="fas fa-download fa-2x" id="resumeDownload"></i></a></p>
-
             </div>
         </div>
 
