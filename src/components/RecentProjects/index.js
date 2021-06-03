@@ -8,12 +8,13 @@ import TourismApp from "../../components/RecentProjects/TourismApp.png"
 import WorkDayScheduler from "../../components/RecentProjects/WorkDayScheduler.png"
 import BurgerLogger from "../../components/RecentProjects/BurgerLogger.png"
 import TheShoppies from "../../components/RecentProjects/TheShoppies.png"
+import NoteTaker from "../../components/RecentProjects/NoteTaker.png"
 
 
 export default function RecentProject({ refName }) {
     return (
         <>
-            <div className="container" ref={refName} >
+            <div className="container" ref={refName} style={{ marginBottom: "60px" }} >
                 <p id="recentProject" >RECENT PROJECTS</p>
                 <div id="line" ></div>
                 <div id="projects" className="row">
@@ -32,8 +33,7 @@ export default function RecentProject({ refName }) {
                     <Project image={BurgerLogger} name="Burger Logger" deployed="https://faisal-burgerlog.herokuapp.com/" repository="https://github.com/faisalsnour/BurgerLogger" description="To create a burger logger using MySQL, Node, Express, Handlebars, ORM and Heroku to deploye the application. The application allows users to enter burger names into the database, validates user's entry to ensure a burger name is entered and displays the entered burger on the left side of the page, waiting to be devoured. Once the user clicks the devour button, the burger will move to the right side of the page
 
 " />
-
-
+                    <Project image={NoteTaker} name="Note Taker" deployed="https://notetaker-faisal.herokuapp.com/" repository="https://github.com/faisalsnour/NoteTaker" description="The purpose of this project is to To buid an application that can be used to write and save notes (title and body) using Express.js where data are stored in and retrieved from a JSON file" />
 
                 </div>
             </div>
