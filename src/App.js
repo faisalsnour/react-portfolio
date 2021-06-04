@@ -53,7 +53,7 @@ function App() {
     <div>
       <Router>
         <Wrapper>
-          <Route exact path="/about" component={About} />
+          {/* <Route exact path="/about" onEnter={() => { console.log("boooooooo") }} /> */}
           <Navbar moveToAbout={moveToAbout} moveToProjects={moveToProjects} moveToContact={moveToContact} />
           <Home moveTo={moveToAbout} />
           <About refName={aboutRef} />

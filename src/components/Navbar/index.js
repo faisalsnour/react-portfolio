@@ -25,7 +25,7 @@ export default function Navbar({ moveToAbout, moveToProjects, moveToContact }) {
                                 </Link> */}
                             </li>
                             <li className="nav-item">
-                                <a id="btnProject" class="nav-link active coloredbutton" aria-current="page" href="#projects" onClick={moveToProjects}>Projects</a>
+                                <a id="btnProject" class="nav-link active coloredbutton" aria-current="page" href="#recentprojects" onClick={moveToProjects}>Projects</a>
                             </li>
                             <li className="nav-item">
                                 <a id="btnContact" class="nav-link active coloredbutton" aria-current="page" href="#contact" onClick={moveToContact}>Contact</a>
