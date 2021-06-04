@@ -49,10 +49,6 @@ export default function Contact({ refName }) {
                 console.log('FAILED...', error);
             });
 
-        // event.target.user_name = ""
-        // event.target.user_email = ""
-        // event.target.message = ""
-
         showModal()
 
         setName("")

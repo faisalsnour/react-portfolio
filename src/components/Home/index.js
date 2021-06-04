@@ -1,9 +1,6 @@
 import "./style.css"
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 
-
-import { Link } from "react-router-dom";
-import { useEffect } from "react/cjs/react.development";
 
 
 
@@ -20,7 +17,6 @@ export default function Home({ moveTo }) {
                         <p>
                             A Front-end Developer and Certified Professional in Accessibility Core Competencies
                         </p>
-
                         <button to="/about" onClick={moveTo} id="btnKnowMore" type="button" className="btn btn-primary" onMouseLeave={() => { setWord("Know more") }} onMouseEnter={() => { setWord("Know more >") }}>{word}</button>
                     </div>
                 </div>

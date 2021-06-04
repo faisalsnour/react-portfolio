@@ -5,7 +5,6 @@ export default function About({ refName }) {
 
 
     return (
-        // <div style={{ backgroundColor: "#DCDCDF" }}>
 
         <div className="container" ref={refName} >
             <p id="recentProject" >ABOUT</p>
@@ -35,9 +34,6 @@ export default function About({ refName }) {
                 <p>Download Resume <a id="pdfResume" href={Resume} download="FaisalNour-Resume"><i className="fas fa-download fa-2x" id="resumeDownload"></i></a></p>
             </div>
         </div>
-
-        // </div>
-
 
     )
 }
