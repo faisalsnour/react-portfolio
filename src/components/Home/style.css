@@ -1,16 +1,12 @@
 #hero {
-  background-image: url("./sss.jpg");
+  background-image: url("./hero-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: 100% 100%; */
   position: relative;
   height: 500px;
-  /* max-height: auto 100%; */
-
-  /* height: 100vh; */
   width: 100%;
-
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
