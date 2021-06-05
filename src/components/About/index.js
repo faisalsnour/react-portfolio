@@ -16,14 +16,15 @@ export default function About({ refName }) {
                 He has BSc in Information Technology & Computing with practical knowledge in web accessibility to
                 develop and implement responsive, modern, and accessible visual designs.
                 He also has professional and post-graduate certifciates and recently graduated from the
-                Coding Bootcamp at the University of Toronto
+                Coding Bootcamp at the University of Toronto. In September 2021, Faisal will begin Master of Art in Information Systems & Technology at York University.
                 </p>
                 <p>
                     <ul style={{ listStyle: "none", marginTop: "20px", marginBottom: "20px" }}>
+                        <li> <i className="fas fa-square-full square"></i> University of Toronto Full Stack Coding Certificate</li>
                         <li> <i className="fas fa-square-full square"></i> York University IEP Bridging Program in System Analysis</li>
-                        <li> <i className="fas fa-square-full square"></i> Immigration Practitioner Diploma</li>
                         <li> <i className="fas fa-square-full square"></i> Certified Professional in Accessibility Core Competencies </li>
                         <li> <i className="fas fa-square-full square"></i> Adobe Certified Expert - Business Practitioner</li>
+                        <li> <i className="fas fa-square-full square"></i> Immigration Practitioner Diploma</li>
                     </ul>
                 </p>
                 <p>Faisal has solid knowledge about HTML5, CSS, SASS, GIT, SQL, JavaSript, BootStrap, React JS,
