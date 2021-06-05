@@ -1,5 +1,5 @@
 import "./style.css"
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import emailjs from 'emailjs-com';
 import Modal from "../Modal"
 

@@ -20,18 +20,15 @@ export default function About({ refName }) {
                 </p>
                 <p>
                     <ul style={{ listStyle: "none", marginTop: "20px", marginBottom: "20px" }}>
-                        <i className="fas fa-square-full square"></i><li style={{ display: "inline" }}>York University IEP Bridging Program in System Analysis</li>
-                        <br />
-                        <i className="fas fa-square-full square"></i><li style={{ display: "inline" }}>Immigration Practitioner Diploma</li>
-                        <br />
-                        <i className="fas fa-square-full square"></i><li style={{ display: "inline" }}>Certified Professional in Accessibility Core Competencies </li>
-                        <br />
-                        <i className="fas fa-square-full square"></i><li style={{ display: "inline" }}>Adobe Certified Expert - Business Practitioner</li>
+                        <li> <i className="fas fa-square-full square"></i> York University IEP Bridging Program in System Analysis</li>
+                        <li> <i className="fas fa-square-full square"></i> Immigration Practitioner Diploma</li>
+                        <li> <i className="fas fa-square-full square"></i> Certified Professional in Accessibility Core Competencies </li>
+                        <li> <i className="fas fa-square-full square"></i> Adobe Certified Expert - Business Practitioner</li>
                     </ul>
                 </p>
                 <p>Faisal has solid knowledge about HTML5, CSS, SASS, GIT, SQL, JavaSript, BootStrap, React JS,
                     Express.JS, RESTful API, Adobe Experience Manager, Agile Development, Jira, Adobe Photoshop, InVision and Sketch</p>
-                <p>Download Resume <a id="pdfResume" href={Resume} download="FaisalNour-Resume"><i className="fas fa-download fa-2x" id="resumeDownload"></i></a></p>
+                <p>Download Resume <a id="pdfResume" href={Resume} download="FaisalNour-Resume"><i className="fas fa-download fa-2x" title="Download Resume" id="resumeDownload" name="resume"></i></a></p>
             </div>
         </div>
 
