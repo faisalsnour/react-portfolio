@@ -16,11 +16,13 @@ The website displays the following:
 
 The following pictures show the web application's appearance and functionality:
 
-![]()
+![Screenshot of Home section](./img/Home.jpeg)
 
-![]()
+![Screenshot of About section](./img/About.jpeg)
 
-![]()
+![Screenshot of Projects section](./img/Projects.jpeg)
+
+![Screenshot of Contact section](./img/Contact.jpeg)
 
 ## Live URL of the deployed application:
 
