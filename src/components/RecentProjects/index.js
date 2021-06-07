@@ -1,14 +1,14 @@
 
 import Project from "../Project"
 import "./style.css"
-import GoldieMohrLtd from "../../components/RecentProjects/GoldieMohrLtd.png"
-import LMS from "../../components/RecentProjects/LMS.png"
-import PasswordGenerator from "../../components/RecentProjects/PasswordGenerator.png"
-import TourismApp from "../../components/RecentProjects/TourismApp.png"
-import WorkDayScheduler from "../../components/RecentProjects/WorkDayScheduler.png"
-import BurgerLogger from "../../components/RecentProjects/BurgerLogger.png"
-import TheShoppies from "../../components/RecentProjects/TheShoppies.png"
-import NoteTaker from "../../components/RecentProjects/NoteTaker.png"
+import GoldieMohrLtd from "../../components/RecentProjects/GoldieMohrLtd.jpeg"
+import LMS from "../../components/RecentProjects/LMS.jpeg"
+import PasswordGenerator from "../../components/RecentProjects/PasswordGenerator.jpeg"
+import TourismApp from "../../components/RecentProjects/TourismApp.jpeg"
+import WorkDayScheduler from "../../components/RecentProjects/WorkDayScheduler.jpeg"
+import BurgerLogger from "../../components/RecentProjects/BurgerLogger.jpeg"
+import TheShoppies from "../../components/RecentProjects/TheShoppies.jpeg"
+import NoteTaker from "../../components/RecentProjects/NoteTaker.jpeg"
 
 
 export default function RecentProject({ refName }) {

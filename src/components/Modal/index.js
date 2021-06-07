@@ -7,7 +7,7 @@ const Modal = ({ handleClose, show, children }) => {
         <div className={showHideClassName}>
             <section className="modal-main">
                 <div style={{ textAlign: "center", marginTop: "10px" }}> {children}
-                    <button type="button" name="close" style={{ backgroundColor: "#3178c6" }} className="btn mb-3" onClick={handleClose}>
+                    <button type="button" name="close" style={{ backgroundColor: "#3178c6", color: "white" }} className="btn mb-3" onClick={handleClose}>
                         Close
         </button>
                 </div>
