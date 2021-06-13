@@ -4,7 +4,7 @@ export default function Project({ name, description, deployed, repository, image
 
     return (
         <>
-            <div className="card col-12 col-md-6 col-lg-6 col-xl-6 col-md-6" style={{ width: "40rem", borderBottom: "5px solid #3178C6", marginTop: "40px", marginRight: "20px", borderRadius: "0px" }}>
+            <div id="projectCard" className="card col-12 col-md-6 col-lg-6 col-xl-6 col-md-6" style={{ width: "40rem", borderBottom: "5px solid #3178C6", marginTop: "40px", marginRight: "20px", borderRadius: "0px" }}>
                 <div className="card-body">
                     <img src={image} alt={name} width="100%" style={{ display: "relative" }} height="250px" />
                     <p id="name" className="card-title">{name}</p>
