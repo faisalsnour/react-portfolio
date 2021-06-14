@@ -18,3 +18,4 @@ export default function Project({ name, description, deployed, repository, image
         </>
     )
 }
+
