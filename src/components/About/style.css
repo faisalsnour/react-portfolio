@@ -24,3 +24,25 @@
   margin-right: 47%;
   border: 1px solid #3178c6;
 }
+
+#showMore {
+  margin-top: 15px;
+  /* font-weight: bold; */
+  color: #3178c6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#showMore:hover {
+  text-decoration: underline;
+}
+
+#try {
+  transition: 2s;
+}
+
+#btnShowMore {
+  display: block;
+  border: 0px;
+  color: transparent;
+  background-color: transparent;
+}

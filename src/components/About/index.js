@@ -2,13 +2,14 @@ import { useState } from 'react'
 import Resume from '../About/Resume.pdf'
 import "./style.css"
 
+
 export default function About({ refName }) {
 
     const [readMore, setReadMore] = useState(false);
 
-    const linkName = readMore ? '- Less Details' : '+ More Details'
+    const linkName = readMore ? '- Fewer Details' : '+ More Details'
 
-    const extraInfo = <><p>
+    const extraInfo = <><p id="try">
         <ul style={{ listStyle: "none", marginTop: "20px", marginBottom: "20px" }}>
             <li> <i className="fas fa-square-full square"></i> University of Toronto Full Stack Coding Certificate</li>
             <li> <i className="fas fa-square-full square"></i> York University IEP Bridging Program in System Analysis</li>
@@ -38,7 +39,7 @@ export default function About({ refName }) {
                 </p>
 
                 {readMore && extraInfo}
-                <a onClick={() => { setReadMore(!readMore) }}><h2>{linkName}</h2></a>
+                <button id="btnShowMore" onClick={() => { setReadMore(!readMore) }}><p id="showMore">{linkName}</p></button>
                 <p>Download Resume <a id="pdfResume" href={Resume} download="FaisalNour-Resume"><i className="fas fa-download fa-2x" title="Download Resume" id="resumeDownload" name="resume"></i></a></p>
             </div>
         </div>
