@@ -37,7 +37,6 @@ export default function About({ refName }) {
                     He also has professional and post-graduate certifciates and recently graduated from the
                     Coding Bootcamp at the University of Toronto. In September 2021, Faisal will begin Master of Art in Information Systems & Technology at York University.
                 </p>
-
                 {readMore && extraInfo}
                 <button id="btnShowMore" onClick={() => { setReadMore(!readMore) }}><p id="showMore">{linkName}</p></button>
                 <p>Download Resume <a id="pdfResume" href={Resume} download="FaisalNour-Resume"><i className="fas fa-download fa-2x" title="Download Resume" id="resumeDownload" name="resume"></i></a></p>
